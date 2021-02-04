@@ -3,12 +3,24 @@
     <head>
         <meta charset = "UTF-8">
         <title>Data Visualization on the Web!</title>
+
+        <!--boot strap connection for stylesheet-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1>Summary: Latitude vs. X</h1>
-        <p>The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled daata from the OpenWeatherMap API to assemble a data set on over 500 cities.</p>
-        <p>After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+        <div class = "container">
+            <div class = "navbar">
+                <div class = "times">
+                    <div class = "white_text">
+                        <h1 class = "sea_green">Latitude</h1>
+                </div>
+            </div>
+        </div>
+        <h1 class = "times">Summary: Latitude vs. X</h1>
+        <p class = "times">The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled daata from the OpenWeatherMap API to assemble a data set on over 500 cities.</p>
+        <p class = "times">After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
         
     </body>
 </html>
