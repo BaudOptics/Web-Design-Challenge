@@ -15,54 +15,68 @@
                 <div class = "times">
                     <div class = "white_text">
                         <h1 class = "sea_green">Latitude</h1>
+                    </div>
                 </div>
+                
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
+                          Plots
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="lat_vs_temp.html">Latitude vs Temperature</a>
+                          <a class="dropdown-item" href="lat_vs_hum.html">Latitude vs Humidity</a>
+                          <a class="dropdown-item" href="lat_vs_clouds.html">Latitude vs Cloud Cover</a>
+                          <a class="dropdown-item" href="lat_vs_wind.html">Latitude vs Wind Speed</a>
                         </div>
                       </div>
                     <a href = "plots.html">
                         <button type="button" class="btn btn-secondary">Comparison</button>
                     </a>
-                    <a href = "resources/cities.html">
+                    <a href = "cities.html">
                         <button type="button" class="btn btn-secondary">Data</button>
                     </a>
                   </div>
             </div>
         </div>
-        <article>
-            <h1 class = "times">Summary: Latitude vs. X</h1>
-            <a href= "resources/assets/images/Fig1.png">
-                <img src="resources/assets/images/Fig1.png" alt="Latitude versus max temperature">
-            </a>
-            <p>The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled daata from the OpenWeatherMap API to assemble a data set on over 500 cities.</p>
-            <p>After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        </article>
-        <ul>
-            <li>
-                <a href="lat_vs_temp.html">
-                    <img target = "_blank" src = "Resources/assets/images/Fig1.png" width="200px" alt = "City Latitude versus Max Temperature">
-                </a>
-            </li>
-            <li>
-                <a href = "lat_vs_hum.html">
-                    <img target = "_blank" src = "Resources/assets/images/Fig2.png" width = "200px" alt = "City Latitude versus Humidity">
-                </a>
-            </li>
-            <li>
-                <a href = "lat_vs_clouds.html">
-                    <img target = "_blank" src = "Resources/assets/images/Fig3.png" width = "200px" alt = "City Latitude versus Cloudiness">
-                </a>
-            </li>
-            <li>
-                <a href = "lat_vs_wind.html">
-                    <img target = "_blank" src = "Resources/assets/images/Fig4.png" width = "200px" alt = "City Latitude versus Wind Speed">
-                </a>
-            </li>
-        </ul>
+        <div class = "row">
+            <div class = "col-md-8">
+                <article>
+                    <h1 class = "times">Summary: Latitude vs. X</h1>
+                    <a href= "resources/assets/images/Fig1.png">
+                        <img src="resources/assets/images/Fig1.png" ALIGN = "left" alt="Latitude versus max temperature" width = "300px">
+                    </a>
+                    <p font-size = "20px">The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled daata from the OpenWeatherMap API to assemble a data set on over 500 cities.</p>
+                    <p>After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </article>
+            </div>
+            <div class = "col-md-4">
+                <ul>
+                    <li>
+                        <a href="lat_vs_temp.html">
+                            <img target = "_blank" src = "Resources/assets/images/Fig1.png" width="200px" alt = "City Latitude versus Max Temperature">
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "lat_vs_hum.html">
+                            <img target = "_blank" src = "Resources/assets/images/Fig2.png" width = "200px" alt = "City Latitude versus Humidity">
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "lat_vs_clouds.html">
+                            <img target = "_blank" src = "Resources/assets/images/Fig3.png" width = "200px" alt = "City Latitude versus Cloudiness">
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "lat_vs_wind.html">
+                            <img target = "_blank" src = "Resources/assets/images/Fig4.png" width = "200px" alt = "City Latitude versus Wind Speed">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
 </html>
